@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: $bgColor;
+    .cube{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        .row{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .square{
+                width: 8px;
+                height: 8px;
+                background-color: rgb(87, 87, 87);
+
+            }
+        }
+    }
+    .logo{
+        img{
+
+        }
+        span{
+
+        }
+    }
+    nav{
+        a{
+
+        }
+        a:hover{
+
+        }
+        .active{
+
+        }
+    }
+}
