@@ -1,3 +1,5 @@
+@import './variable.scss';
+
 .home {
     overflow-x: hidden;
     position: relative;
@@ -7,108 +9,380 @@
         background-image: url('../../assets/img/mainBg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        .card{
-            width: 500px;
-            height: 350px;
-            background-color: red;
+        position: relative;
+
+        .filter {
             position: absolute;
-            top: 30vh;
-            left: 8vw;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: brightness(40%);
+
+            .card {
+                width: 500px;
+                height: 350px;
+                // background-color: red;
+                position: absolute;
+                top: 30vh;
+                left: 8vw;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                    color: $color;
+
+                }
+
+                h1 {
+                    font-size: 64px;
+                    color: $yellow;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 22px;
+                    line-height: 1.5;
+                    color: $color;
+                }
+            }
+
+            .hexagon1 {
+                width: calc(100vw / 10);
+                height: calc(100vw / 10);
+                background-image: url('../../assets/img/Nistru.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: -5vw;
+                top: 7vh;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transition: 0.5s ease-in-out;
+                outline: 2px solid red;
+            }
+
+            .hexagon2 {
+                width: calc(100vw / 8);
+                height: calc(100vw / 8);
+                background-image: url('../../assets/img/CetateaSoroca.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 3vw;
+                top: 24vh;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transition: 0.5s ease-in-out;
+                outline: 2px solid red;
+            }
+
+            .hexagon3 {
+                width: calc(100vw / 5);
+                height: calc(100vw / 5);
+                background-image: url('../../assets/img/CastelMimi.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 21vw;
+                top: 43vh;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transition: 0.5s ease-in-out;
+            }
+
+            .hexagon4 {
+                width: calc(100vw / 6);
+                height: calc(100vw / 6);
+                background-image: url('../../assets/img/Chisinau.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 4vw;
+                top: 60vh;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transition: 0.5s ease-in-out;
+            }
+
+            .hexagon5 {
+                width: calc(100vw / 10);
+                height: calc(100vw / 10);
+                background-image: url('../../assets/img/OrheiulVechi.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 18vw;
+                top: 20vh;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transition: 0.5s ease-in-out;
+            }
+
+            .hexagon6 {
+                width: calc(100vw / 7);
+                height: calc(100vw / 7);
+                background-image: url('../../assets/img/Cricova.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 32vw;
+                top: 8vh;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transition: 0.5s ease-in-out;
+            }
+
+            .hexagon7 {
+                width: calc(100vw / 6);
+                height: calc(100vw / 6);
+                background-image: url('../../assets/img/StefanCelMare.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 42vw;
+                top: 60vh;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transition: 0.5s ease-in-out;
+            }
+
+            .hex:hover {
+                transform: scale(1.1);
+            }
         }
-        .hexagon1 {
-            width: calc(100vw / 10);
-            height: calc(100vw / 10);
-            background-image: url('../../assets/img/Nistru.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            right: -5vw;
-            top: 7vh;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    .sec-2 {
+        background-color: $secBgColor;
+        color: $color;
+
+        .triangle {
+            height: 50px;
+            background-color: $bgColor;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+        }
+
+        .subSec-1 {
+            display: flex;
+            padding: 50px 50px;
+            align-items: center;
+            gap: 50px;
+
+            .left {
+                flex: 1;
+                margin-left: 30px;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    max-width: 700px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin-left: 20px;
+                }
+            }
+
+            .right {
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+
+                img {
+                    border-radius: 30px;
+                    width: 80%;
+                    opacity: 0;
+                    transition: 1s;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .subSec-2 {
+            display: flex;
+            padding: 50px 50px;
+            align-items: center;
+            gap: 50px;
+
+            .right {
+                flex: 1;
+                margin-left: 30px;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    max-width: 700px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin-left: 20px;
+                }
+            }
+
+            .left {
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+
+                img {
+                    border-radius: 30px;
+                    height: 600px;
+                    opacity: 0;
+                    transition: 1s;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .subSec-3 {
+            display: flex;
+            padding: 50px 50px;
+            align-items: center;
+            gap: 50px;
+
+            .left {
+                flex: 1;
+                margin-left: 30px;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    max-width: 700px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin-left: 20px;
+                }
+            }
+
+            .right {
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+
+                img {
+                    border-radius: 30px;
+                    width: 600px;
+                    opacity: 0;
+                    transition: 1s;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .subSec-4 {
+            display: flex;
+            padding: 50px 50px;
+            align-items: center;
+            gap: 50px;
+
+            .left {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    text-align: center;
+                    max-width: 700px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                }
+            }
+
+            .right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    text-align: center;
+                    max-width: 700px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .sec-3 {
+        background-color: $bgColor;
+        height: 300px;
+        overflow: hidden;
+
+        img {
+            width: 20%;
+            height: 300px;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
             transition: 0.5s ease-in-out;
         }
 
-        .hexagon2 {
-            width: calc(100vw / 8);
-            height: calc(100vw / 8);
-            background-image: url('../../assets/img/CetateaSoroca.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            right: 3vw;
-            top: 24vh;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            transition: 0.5s ease-in-out;
+        img:hover {
+            transform: scaleX(1.1);
         }
+    }
 
-        .hexagon3 {
-            width: calc(100vw / 5);
-            height: calc(100vw / 5);
-            background-image: url('../../assets/img/CastelMimi.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            right: 21vw;
-            top: 43vh;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            transition: 0.5s ease-in-out;
+    .sec-4 {
+        background-color: $secBgColor;
+        color: $color;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+            h4{
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+            .links {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                a {
+                    background-color: $bgColor;
+                    color: $color;
+                    font-size: 20px;
+                    padding: 8px 15px;
+                    border: 1px solid $color;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    .icon {
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+                }
+            }
         }
-
-        .hexagon4 {
-            width: calc(100vw / 6);
-            height: calc(100vw / 6);
-            background-image: url('../../assets/img/Chisinau.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            right: 4vw;
-            top: 60vh;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            transition: 0.5s ease-in-out;
+        .triangle{
+            height: 50px;
+            background-color: $bgColor;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         }
-
-        .hexagon5 {
-            width: calc(100vw / 10);
-            height: calc(100vw / 10);
-            background-image: url('../../assets/img/OrheiulVechi.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            right: 18vw;
-            top: 20vh;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            transition: 0.5s ease-in-out;
-        }
-
-        .hexagon6 {
-            width: calc(100vw / 6);
-            height: calc(100vw / 6);
-            background-image: url('../../assets/img/Cricova.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            right: 30vw;
-            top: 10vh;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            transition: 0.5s ease-in-out;
-        }
-
-        .hexagon7 {
-            width: calc(100vw / 6);
-            height: calc(100vw / 6);
-            background-image: url('../../assets/img/StefanCelMare.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            right: 40vw;
-            top: 65vh;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            transition: 0.5s ease-in-out;
-        }
-
-        .hex:hover {
-            transform: scale(1.1);
-        }
-
     }
 }
