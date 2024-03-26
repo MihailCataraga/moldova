@@ -1,80 +1,114 @@
-.home{
+.home {
     overflow-x: hidden;
     position: relative;
-    .sec-1{
-    height: 100vh;
-    background-image: url('../../assets/img/mainBg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    .hexagon1{
-        width: 200px;
-        height: 200px;
-        background-color: red;
-        position: absolute;
-        right: -100px;
-        top: 50px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotateZ(40deg);
+
+    .sec-1 {
+        height: 100vh;
+        background-image: url('../../assets/img/mainBg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .card{
+            width: 500px;
+            height: 350px;
+            background-color: red;
+            position: absolute;
+            top: 30vh;
+            left: 8vw;
+        }
+        .hexagon1 {
+            width: calc(100vw / 10);
+            height: calc(100vw / 10);
+            background-image: url('../../assets/img/Nistru.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: -5vw;
+            top: 7vh;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition: 0.5s ease-in-out;
+        }
+
+        .hexagon2 {
+            width: calc(100vw / 8);
+            height: calc(100vw / 8);
+            background-image: url('../../assets/img/CetateaSoroca.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 3vw;
+            top: 24vh;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition: 0.5s ease-in-out;
+        }
+
+        .hexagon3 {
+            width: calc(100vw / 5);
+            height: calc(100vw / 5);
+            background-image: url('../../assets/img/CastelMimi.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 21vw;
+            top: 43vh;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition: 0.5s ease-in-out;
+        }
+
+        .hexagon4 {
+            width: calc(100vw / 6);
+            height: calc(100vw / 6);
+            background-image: url('../../assets/img/Chisinau.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 4vw;
+            top: 60vh;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition: 0.5s ease-in-out;
+        }
+
+        .hexagon5 {
+            width: calc(100vw / 10);
+            height: calc(100vw / 10);
+            background-image: url('../../assets/img/OrheiulVechi.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 18vw;
+            top: 20vh;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition: 0.5s ease-in-out;
+        }
+
+        .hexagon6 {
+            width: calc(100vw / 6);
+            height: calc(100vw / 6);
+            background-image: url('../../assets/img/Cricova.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 30vw;
+            top: 10vh;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition: 0.5s ease-in-out;
+        }
+
+        .hexagon7 {
+            width: calc(100vw / 6);
+            height: calc(100vw / 6);
+            background-image: url('../../assets/img/StefanCelMare.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 40vw;
+            top: 65vh;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition: 0.5s ease-in-out;
+        }
+
+        .hex:hover {
+            transform: scale(1.1);
+        }
+
     }
-    .hexagon2{
-        width: 250px;
-        height: 250px;
-        background-color: red;
-        position: absolute;
-        right: 50px;
-        top: 250px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotateZ(40deg);
-    }
-    .hexagon3{
-        width: 350px;
-        height: 350px;
-        background-color: red;
-        position: absolute;
-        right: 370px;
-        top: 370px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotateZ(40deg);
-    }
-    .hexagon4{
-        width: 300px;
-        height: 300px;
-        background-color: red;
-        position: absolute;
-        right: 80px;
-        top: 570px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotateZ(40deg);
-    }
-    .hexagon5{
-        width: 150px;
-        height: 150px;
-        background-color: red;
-        position: absolute;
-        right: 310px;
-        top: 230px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotateZ(40deg);
-    }
-    .hexagon6{
-        width: 250px;
-        height: 250px;
-        background-color: red;
-        position: absolute;
-        right: 490px;
-        top: 110px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotateZ(40deg);
-    }
-    .hexagon7{
-        width: 250px;
-        height: 250px;
-        background-color: red;
-        position: absolute;
-        right: 700px;
-        top: 650px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotateZ(40deg);
-    }
-}
 }
