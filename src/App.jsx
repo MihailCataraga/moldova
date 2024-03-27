@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import './style/index.scss';
+import Anthem from './pages/Anthem';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/anthem' element={<Anthem />} />
       </Routes>
     </BrowserRouter>
   )

@@ -13,28 +13,31 @@ export default function () {
     };
     return (
         <div className='footer'>
-            <img src={Stema} alt='Stema RM img' />
-            <div className='links'>Links:
-                <Link to='/anthem' >Anthem</Link>
-                <Link to='/locations' >Best Locations</Link>
+            <div className='content'>
+                <img src={Stema} alt='Stema RM img' />
+                <div className='links'>Links:
+                    <Link to='/anthem' >Anthem</Link>
+                    <Link to='/locations' >Best Locations</Link>
+                </div>
+                <div className='socialMedia'>
+                    <Link to={'/'} onClick={toTop}>
+                        <FaInstagram className='icon' />
+                    </Link>
+                    <Link to={'/'} onClick={toTop}>
+                        <FaFacebookF className='icon' />
+                    </Link>
+                    <Link to={'/'} onClick={toTop}>
+                        <FaXTwitter className='icon' />
+                    </Link>
+                    <Link to={'/'} onClick={toTop}>
+                        <FaYoutube className='icon' />
+                    </Link>
+                    <Link to={'/'} onClick={toTop}>
+                        <FaTiktok className='icon' />
+                    </Link>
+                </div>
             </div>
-            <div className='socialMedia'>
-                <Link to={'/'} onClick={toTop}>
-                    <FaInstagram className='icon' />
-                </Link>
-                <Link to={'/'} onClick={toTop}>
-                    <FaFacebookF className='icon' />
-                </Link>
-                <Link to={'/'} onClick={toTop}>
-                    <FaXTwitter className='icon' />
-                </Link>
-                <Link to={'/'} onClick={toTop}>
-                    <FaYoutube className='icon' />
-                </Link>
-                <Link to={'/'} onClick={toTop}>
-                    <FaTiktok className='icon' />
-                </Link>
-            </div>
+            <p>Developed by Midas Group 2024.</p>
         </div>
     )
 }
