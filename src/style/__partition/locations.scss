@@ -1,0 +1,35 @@
+@import './variable.scss';
+
+.locations{
+    .sec-1{
+        background-color: $secBgColor;
+        padding-top: 100px;
+        h1{
+            font-size: 36px;
+            text-align: center;
+            color: $color;
+        }
+        .allLocations{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 25px;
+            a{
+                text-decoration: none;
+                margin-bottom: 25px;
+                img{
+                    width: 400px;
+                    aspect-ratio: 4 / 2.5;
+                    border-radius: 25px;
+                }
+                h4{
+                    font-size: 22px;
+                    text-align: center;
+                    color: $color;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

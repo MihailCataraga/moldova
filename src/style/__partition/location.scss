@@ -1,0 +1,31 @@
+@import './variable.scss';
+
+.location{
+    .sec-1{
+        background-color: $secBgColor;
+        padding: 150px 50px 100px 50px;
+        color: $color;
+        h1{
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            img{
+                width: 500px;
+                align-self: flex-start;
+                border-radius: 25px;
+            }
+            .infos{
+                p{
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
