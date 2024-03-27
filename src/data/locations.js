@@ -257,7 +257,7 @@ const locations = [
     {
         id: 10,
         name: 'Căpriana Monastery',
-        img: './src/assets/img/Capriana.jpg',
+        img: '/img/Capriana.jpg',
         description: [
             {
                 p: "Căpriana Monastery is one of the oldest and most important monasteries in the Republic of Moldova. Located in the middle of an oak forest, near the town of Căpriana in the Străseni district, this monastic monastery has a long history and a special spiritual significance for the inhabitants of Moldova. Here is some information about Căpriana Monastery:"

@@ -22,7 +22,7 @@ export default function Location() {
       <div className='sec-1'>
         <h1>{info.name}</h1>
         <div className='info'>
-          <img src={'../' + info.img} alt={info.name} />
+          <img src={info.img} alt={info.name} />
           <div className='infos'>
             {       
               description.map((i) => {
