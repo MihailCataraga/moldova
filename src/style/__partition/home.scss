@@ -5,7 +5,7 @@
     position: relative;
 
     .sec-1 {
-        height: 100vh;
+        height: 980px;
         background-image: url('../../assets/img/mainBg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -50,8 +50,8 @@
             }
 
             .hexagon1 {
-                width: calc(100vw / 10);
-                height: calc(100vw / 10);
+                width: 100px;
+                height: 100px;
                 background-image: url('../../assets/img/Nistru.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -64,22 +64,22 @@
             }
 
             .hexagon2 {
-                width: calc(100vw / 8);
-                height: calc(100vw / 8);
+                width: 150px;
+                height: 150px;
                 background-image: url('../../assets/img/CetateaSoroca.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: absolute;
                 right: 3vw;
-                top: 24vh;
+                top: 30vh;
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                 transition: 0.5s ease-in-out;
                 outline: 2px solid red;
             }
 
             .hexagon3 {
-                width: calc(100vw / 5);
-                height: calc(100vw / 5);
+                width: 250px;
+                height: 250px;
                 background-image: url('../../assets/img/CastelMimi.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -91,8 +91,8 @@
             }
 
             .hexagon4 {
-                width: calc(100vw / 6);
-                height: calc(100vw / 6);
+                width: 200px;
+                height: 200px;
                 background-image: url('../../assets/img/Chisinau.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -104,8 +104,8 @@
             }
 
             .hexagon5 {
-                width: calc(100vw / 10);
-                height: calc(100vw / 10);
+                width: 150px;
+                height: 150px;
                 background-image: url('../../assets/img/OrheiulVechi.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -117,8 +117,8 @@
             }
 
             .hexagon6 {
-                width: calc(100vw / 7);
-                height: calc(100vw / 7);
+                width: 200px;
+                height: 200px;
                 background-image: url('../../assets/img/Cricova.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -130,8 +130,8 @@
             }
 
             .hexagon7 {
-                width: calc(100vw / 6);
-                height: calc(100vw / 6);
+                width: 200px;
+                height: 200px;
                 background-image: url('../../assets/img/StefanCelMare.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -296,6 +296,7 @@
                 h4 {
                     font-size: 30px;
                     margin-bottom: 10px;
+                    text-align: center;
                 }
 
                 p {
@@ -315,6 +316,7 @@
                 h4 {
                     font-size: 30px;
                     margin-bottom: 10px;
+                    text-align: center;
                 }
 
                 p {
@@ -329,12 +331,12 @@
 
     .sec-3 {
         background-color: $bgColor;
-        height: 300px;
+        height: 25vh;
         overflow: hidden;
 
         img {
             width: 20%;
-            height: 300px;
+            height: 100%;
             clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
             transition: 0.5s ease-in-out;
         }
@@ -387,6 +389,229 @@
             height: 50px;
             background-color: $bgColor;
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home{
+        .sec-1{
+            .filter{
+                .hexagon1{
+                    top: 300px;
+                }
+                .hexagon2{
+                    display: none;
+                }
+                .hexagon3{
+                    display: none;
+                }
+                .hexagon4{
+                    display: initial;
+                    top: 550px
+                }
+                .hexagon5{
+                    display: none;
+                }
+                .hexagon6{
+                    right: 100px;
+                }
+                .hexagon7{
+                    right: 350px;
+                    top: 700px;
+                }
+            }
+        }
+        .sec-2{
+            .content{
+                .subSec-1{
+                    flex-direction: column;
+                    .left{
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            margin-left: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+                .subSec-2{
+                    flex-direction: column;
+                    .left{
+                        img{
+                            height: 400px;
+                        }
+                    }
+                    .right{
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            margin-left: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+                .subSec-3{
+                    flex-direction: column;
+                    .left{
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            margin-left: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+                .subSec-4{
+                    flex-direction: column;
+                }
+            }
+        }
+        .sec-3{
+            height: 140px;
+        }
+        .sec-4{
+            .content{
+                .links{
+                    flex-direction: column;
+                    a{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .home{
+        .sec-1{
+            height: 100vh;
+            .filter{
+                .card{
+                    p{
+                        max-width: 80vw;
+                        font-size: 18px;
+                    }
+                }
+                .hexagon1{
+                    top: 220px;
+                    right: -50px;
+                    display: none;
+                }
+                .hexagon2{
+                    display: none;
+                }
+                .hexagon3{
+                    display: none;
+                }
+                .hexagon4{
+                    display: initial;
+                    top: 550px;
+                    display: none;
+                }
+                .hexagon5{
+                    display: none;
+                }
+                .hexagon6{
+                    top: 75px;
+                    right: 50px;
+                    width: 125px;
+                    height: 125px;
+                    display: none;
+                }
+                .hexagon7{
+                    right: 200px;
+                    top: 700px;
+                    display: none;
+                }
+            }
+        }
+        .sec-2{
+            .content{
+                .subSec-1{
+                    flex-direction: column;
+                    .left{
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            margin-left: 0;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                    .right{
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+                .subSec-2{
+                    flex-direction: column;
+                    .left{
+                        img{
+                            height: 300px;
+                        }
+                    }
+                    .right{
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            margin-left: 0;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .subSec-3{
+                    flex-direction: column;
+                    .left{
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            margin-left: 0;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                    .right{
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+                .subSec-4{
+                    .left{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    .right{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .sec-3{
+            height: 80px;
+        }
+        .sec-4{
+            .content{
+                .links{
+                    flex-direction: column;
+                    a{
+                        margin-bottom: 25px;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
