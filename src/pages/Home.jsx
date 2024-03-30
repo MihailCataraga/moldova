@@ -51,8 +51,8 @@ export default function Home() {
         <div className='filter'>
           <div className='card'>
             <p className='title'>Republic of</p>
-            <h1>Moldova</h1>
-            <p>Moldova, a country located in Eastern Europe, is known for its varied landscapes, which include hills, forests and picturesque rivers, as well as its rich and diverse cultural heritage.</p>
+            <p>Moldova</p>
+            <h1>Moldova, a country located in Eastern Europe, is known for its varied landscapes, which include hills, forests and picturesque rivers.</h1>
           </div>
           <div className='hexagon1 hex'></div>
           <div className='hexagon2 hex'></div>
