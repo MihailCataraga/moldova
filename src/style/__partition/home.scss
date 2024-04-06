@@ -29,20 +29,20 @@
                 display: flex;
                 flex-direction: column;
 
-                h3 {
+                .title {
                     font-size: 36px;
                     margin-bottom: 10px;
                     color: $color;
 
                 }
 
-                h1 {
+                p {
                     font-size: 64px;
                     color: $yellow;
                     margin-bottom: 10px;
                 }
 
-                p {
+                h1 {
                     font-size: 22px;
                     line-height: 1.5;
                     color: $color;
@@ -168,7 +168,7 @@
                 flex: 1;
                 margin-left: 30px;
 
-                h4 {
+                h2 {
                     font-size: 30px;
                     margin-bottom: 10px;
                 }
@@ -209,7 +209,7 @@
                 flex: 1;
                 margin-left: 30px;
 
-                h4 {
+                h2 {
                     font-size: 30px;
                     margin-bottom: 10px;
                 }
@@ -250,7 +250,7 @@
                 flex: 1;
                 margin-left: 30px;
 
-                h4 {
+                h2 {
                     font-size: 30px;
                     margin-bottom: 10px;
                 }
@@ -293,7 +293,7 @@
                 flex-direction: column;
                 align-items: center;
 
-                h4 {
+                h2 {
                     font-size: 30px;
                     margin-bottom: 10px;
                     text-align: center;
@@ -313,7 +313,7 @@
                 flex-direction: column;
                 align-items: center;
 
-                h4 {
+                h2 {
                     font-size: 30px;
                     margin-bottom: 10px;
                     text-align: center;
@@ -354,7 +354,7 @@
             flex-direction: column;
             align-items: center;
             padding: 50px 0;
-            h4{
+            h2{
                 font-size: 30px;
                 margin-bottom: 50px;
             }
@@ -427,7 +427,7 @@
                 .subSec-1{
                     flex-direction: column;
                     .left{
-                        h4{
+                        h2{
                             text-align: center;
                         }
                         p{
@@ -444,7 +444,7 @@
                         }
                     }
                     .right{
-                        h4{
+                        h2{
                             text-align: center;
                         }
                         p{
@@ -456,7 +456,7 @@
                 .subSec-3{
                     flex-direction: column;
                     .left{
-                        h4{
+                        h2{
                             text-align: center;
                         }
                         p{
@@ -491,7 +491,7 @@
             height: 100vh;
             .filter{
                 .card{
-                    p{
+                    h1{
                         max-width: 80vw;
                         font-size: 18px;
                     }
@@ -534,7 +534,7 @@
                 .subSec-1{
                     flex-direction: column;
                     .left{
-                        h4{
+                        h2{
                             text-align: center;
                         }
                         p{
@@ -557,7 +557,7 @@
                         }
                     }
                     .right{
-                        h4{
+                        h2{
                             text-align: center;
                         }
                         p{
@@ -570,7 +570,7 @@
                 .subSec-3{
                     flex-direction: column;
                     .left{
-                        h4{
+                        h2{
                             text-align: center;
                         }
                         p{
