@@ -118,7 +118,7 @@ export default function Home() {
           <div className='links'>
             <Link to='anthem'>
               <GiMoldova className='icon' />
-              Anthem of the Republic of Moldova
+              Anthem
             </Link>
             <Link to='locations'>
               <FaSearchLocation className='icon' />
