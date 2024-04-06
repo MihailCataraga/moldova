@@ -46,3 +46,14 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .footer{
+        .content{
+            flex-wrap: wrap;
+            .socialMedia{
+                margin-top: 15px;
+            }
+        }
+    }
+}

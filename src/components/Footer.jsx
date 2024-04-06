@@ -16,8 +16,8 @@ export default function () {
             <div className='content'>
                 <img src={Stema} alt='Stema RM img' />
                 <div className='links'>Links:
-                    <Link to='/anthem' >Anthem</Link>
-                    <Link to='/locations' >Best Locations</Link>
+                    <Link to='/anthem' onClick={toTop} >Anthem</Link>
+                    <Link to='/locations' onClick={toTop} >Best Locations</Link>
                 </div>
                 <div className='socialMedia'>
                     <Link to={'/'} onClick={toTop}>

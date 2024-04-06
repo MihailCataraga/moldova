@@ -23,7 +23,7 @@
             font-size: 56px;
         }
     }
-    nav{
+    .nav{
         a{
             text-decoration: none;
             color: $color;
@@ -31,10 +31,69 @@
             margin-left: 30px;
         }
         a:hover{
-
+            color: $yellow;
         }
         .active{
-
+            color: $yellow;
         }
+    }
+    .miniNav{
+        display: none;
+    }
+    .miniMenu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar{
+        .nav{
+            display: none;
+        }
+        .miniNav{
+            display: initial;
+            .icon{
+                color: $yellow;
+                font-size: 28px;
+            }
+        }
+        .miniMenu {
+            display: initial;
+            position: absolute;
+            top: 80px;
+            right: 0px;
+            border-top: 1px solid $color;
+            display: none;
+            flex-direction: column;
+            padding: 20px;
+            background-color: $bgColor;
+            a{
+                color: $color;
+                text-decoration: none;
+                margin: 5px 0;
+            }
+            a:hover{
+                color: $yellow;
+            }
+            .active{
+                color: $yellow;
+            }
+        }
+    }
+}
+@keyframes miniMenu {
+    from {
+        right: -130px;
+    }
+    to {
+        right: 0px;
+    }
+}
+@keyframes closeMiniMenu {
+    from {
+        right: 0px;
+    }
+    to {
+        right: -130px;
     }
 }
