@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Stema from '../assets/img/stemaRM.png';
+import Stema from '../assets/img/stemaRM.webp';
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 

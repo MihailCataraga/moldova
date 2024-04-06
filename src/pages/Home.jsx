@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar';
-import Moldova from '../assets/img/Moldova.png';
-import MapMd from '../assets/img/Map.png';
-import Constitutia from '../assets/img/Consitutia.jpg';
-import Catedrala from '../assets/img/Catedrala.jpg';
-import Haine from '../assets/img/Haine.jpg';
-import Mestesug from '../assets/img/Mestesug.jpg';
-import Struguri from '../assets/img/Struguri.jpg';
-import Paine from '../assets/img/Paine.jpg';
+import Moldova from '../assets/img/Moldova.webp';
+import MapMd from '../assets/img/Map.webp';
+import Constitutia from '../assets/img/Consitutia.webp';
+import Catedrala from '../assets/img/Catedrala.webp';
+import Haine from '../assets/img/Haine.webp';
+import Mestesug from '../assets/img/Mestesug.webp';
+import Struguri from '../assets/img/Struguri.webp';
+import Paine from '../assets/img/Paine.webp';
 import { GiMoldova } from "react-icons/gi";
 import { FaSearchLocation } from "react-icons/fa";
 import Footer from '../components/Footer';

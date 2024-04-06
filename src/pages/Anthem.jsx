@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Note1 from '../assets/img/note-1.jpg'
-import Note2 from '../assets/img/note-2.jpg'
-import Note3 from '../assets/img/note-3.jpg'
-import Note4 from '../assets/img/note-4.jpg'
-import Note5 from '../assets/img/note-5.jpg'
-import Note6 from '../assets/img/note-6.jpg'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Note1 from '../assets/img/note-1.webp'
+import Note2 from '../assets/img/note-2.webp'
+import Note3 from '../assets/img/note-3.webp'
+import Note4 from '../assets/img/note-4.webp'
+import Note5 from '../assets/img/note-5.webp'
+import Note6 from '../assets/img/note-6.webp'
 
 export default function Anthem() {
   return (

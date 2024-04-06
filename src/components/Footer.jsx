@@ -1,5 +1,5 @@
 import React from 'react';
-import Stema from '../assets/img/stemaRM.png';
+import Stema from '../assets/img/stemaRM.webp';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebookF, FaYoutube, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
