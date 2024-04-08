@@ -29,3 +29,35 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .location{
+        .sec-1{
+            .info{
+                img{
+                    width: 35vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .location{
+        .sec-1{
+            padding: 150px 10vw 50px 10vw;
+            .info{
+                flex-direction: column;
+                img{
+                    width: 80vw;
+                    
+                }
+                .infos{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

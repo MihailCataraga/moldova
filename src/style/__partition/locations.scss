@@ -33,3 +33,17 @@
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    .locations{
+        .sec-1{
+            .allLocations{
+                a{
+                    img{
+                        width: 80vw;
+                    }
+                }
+            }
+        }
+    }
+}
