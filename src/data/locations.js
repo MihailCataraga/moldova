@@ -2,7 +2,7 @@ const locations = [
     {
         id: 1,
         name: 'Soroca Fortress',
-        img: '/img/CetateaSoroca.jpg',
+        img: '/img/CetateaSoroca.webp',
         description: [
             {
                 p: 'Soroca Citadel is an important tourist and historical objective located in the city of Soroca in the Republic of Moldova. Here is some information about this impressive monument:'
@@ -30,7 +30,7 @@ const locations = [
     {
         id: 2,
         name: 'Hâncu Monastery',
-        img: '/img/ManastireaHancu.jpg',
+        img: '/img/ManastireaHancu.webp',
         description: [
             {
                 p: 'Hâncu Monastery is a monastic complex located near the village of Hâncu in the Republic of Moldova. Here is some information about this monastery:'
@@ -58,7 +58,7 @@ const locations = [
     {
         id: 3,
         name: 'Criva Cave or "Emil Racoviţă"',
-        img: '/img/PesteraEmilRacovita.jpg',
+        img: '/img/PesteraEmilRacovita.webp',
         description: [
             {
                 p: 'The Criva Cave, also known as the Emil Racoviță Cave, is one of the most remarkable natural attractions in the Republic of Moldova. Here is some information about this cave:'
@@ -89,7 +89,7 @@ const locations = [
     {
         id: 4,
         name: 'One Hundred Mounds',
-        img: '/img/Movile.jpg',
+        img: '/img/Movile.webp',
         description: [
             {
                 p: 'One hundred mounds, also known as "Pămănturile Movile", is a unique geographical area located in the southeast of the Republic of Moldova, near the village of Saharna in the Rezina district. Here is some information about this remarkable location:'
@@ -117,7 +117,7 @@ const locations = [
     {
         id: 5,
         name: 'CRICOVA CELLARS',
-        img: '/img/Cricova.jpg',
+        img: '/img/Cricova.webp',
         description: [
             {
                 p: 'Cricova wineries are one of the most impressive tourist attractions in the Republic of Moldova. These are among the largest and oldest wine cellars in the world, located near the city of Cricova, approximately 15 kilometers north of the capital Chisinau. Here is some information about this remarkable destination:'
@@ -145,7 +145,7 @@ const locations = [
     {
         id: 6,
         name: 'Orheiul Vechi, Butuceni',
-        img: 'img/OrheiulVechi.jpg',
+        img: 'img/OrheiulVechi.webp',
         description: [
             {
                 p: "Orheiul Vechi is a unique and fascinating destination in the Republic of Moldova, located near the village of Butuceni. This historical and natural site offers a glimpse into the region's rich past and is famous for its spectacular landscapes, rock settlements and medieval monasteries. Here is some information about this remarkable destination:"
@@ -173,7 +173,7 @@ const locations = [
     {
         id: 7,
         name: 'Mimi Castle',
-        img: '/img/CastelMimi.jpg',
+        img: '/img/CastelMimi.webp',
         description: [
             {
                 p: "Mimi Castle is one of the most famous and remarkable tourist attractions in the Republic of Moldova. This imposing castle is located near the town of Bulboaca, near the capital Chisinau, and is famous for its splendid architecture, rich history and idyllic scenery. Here is more information about Mimi Castle:"
@@ -201,7 +201,7 @@ const locations = [
     {
         id: 8,
         name: "Manuc Bei's mansion",
-        img: '/img/ManucBei.jpg',
+        img: '/img/ManucBei.webp',
         description: [
             {
                 p: "Manuc Bei's mansion is an architectural gem located in the center of the city of Hâncești, in the Republic of Moldova. This impressive mansion is a symbol of Moldovan history and culture and is associated with one of the most influential and wealthy noble families in the history of the country. Here is some information about Manuc Bei's Mansion:"
@@ -229,7 +229,7 @@ const locations = [
     {
         id: 9,
         name: 'Codri reservation',
-        img: '/img/Codrii.jpg',
+        img: '/img/Codrii.webp',
         description: [
             {
                 p: "The Codri Reserve is one of the most significant and picturesque protected areas in the Republic of Moldova. Located in the central part of the country, the Codri Reserve is a natural and cultural treasure, rich in its biological and historical diversity. Here is some information about this reservation:"
@@ -257,7 +257,7 @@ const locations = [
     {
         id: 10,
         name: 'Căpriana Monastery',
-        img: '/img/Capriana.jpg',
+        img: '/img/Capriana.webp',
         description: [
             {
                 p: "Căpriana Monastery is one of the oldest and most important monasteries in the Republic of Moldova. Located in the middle of an oak forest, near the town of Căpriana in the Străseni district, this monastic monastery has a long history and a special spiritual significance for the inhabitants of Moldova. Here is some information about Căpriana Monastery:"
@@ -285,7 +285,7 @@ const locations = [
     {
         id: 11,
         name: 'Curchi Monastery',
-        img: '/img/Curchi.jpg',
+        img: '/img/Curchi.webp',
         description: [
             {
                 p: "Curchi Monastery is one of the most beautiful and important monasteries in the Republic of Moldova. Located near Orheiul Vechi, in a picturesque landscape of hills and forests, the monastery attracts numerous visitors from the country and abroad due to its architectural and natural beauty. Here is some information about Curchi Monastery:"
@@ -313,7 +313,7 @@ const locations = [
     {
         id: 12,
         name: 'Chateau Vartely winery',
-        img: '/img/ChateauVartely.jpg',
+        img: '/img/ChateauVartely.webp',
         description: [
             {
                 p: "The Chateau Vartely winery is one of the most prestigious and innovative wineries in the Republic of Moldova, recognized both for the quality of the wines produced and for the beauty of the landscape in which it is located. Here is some information about this winery:"
