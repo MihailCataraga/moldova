@@ -116,7 +116,8 @@ export default function Home() {
           <div className='hexagon7 hex'></div>
         </div>
       </div>
-      <button onClick={getData}>Send</button>
+      <button onClick={getData}>Get Data</button>
+      <button onClick={postData}>Send Email</button>
       <p>{data}</p>
       <div className='sec-2'>
         <div className='triangle'></div>
