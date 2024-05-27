@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar';
 import Moldova from '../assets/img/Moldova.webp';
 import MapMd from '../assets/img/Map.webp';
@@ -14,6 +14,59 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const EMAIL = "hhh@gmail.com"
+
+
+  const postData = async () => {
+    try {
+      const response = await fetch('https://demo1-ruddy.vercel.app/resend-registration-link', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email: EMAIL}),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result)
+      setData(result);
+    } catch (error) {
+      setError(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getData = async () => {
+    try {
+      const response = await fetch('https://demo1-ruddy.vercel.app/users', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result);
+      setData(result);
+    } catch (error) {
+      setError(error);
+    } finally {
+      setLoading(false);
+    }
+  };
   useEffect(() => {
     const img = () => {
       const elem = document.getElementById('Moldova');
@@ -63,6 +116,7 @@ export default function Home() {
           <div className='hexagon7 hex'></div>
         </div>
       </div>
+      <button onClick={getData}>Send</button>
       <div className='sec-2'>
         <div className='triangle'></div>
         <div className='content'>
