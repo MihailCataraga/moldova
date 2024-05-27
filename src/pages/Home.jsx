@@ -117,6 +117,7 @@ export default function Home() {
         </div>
       </div>
       <button onClick={getData}>Send</button>
+      <p>{data}</p>
       <div className='sec-2'>
         <div className='triangle'></div>
         <div className='content'>
