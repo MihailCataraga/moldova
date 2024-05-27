@@ -60,7 +60,7 @@ export default function Home() {
 
       const result = await response.json();
       console.log(result);
-      setData(result);
+      setData(result.msg);
     } catch (error) {
       setError(error);
     } finally {
@@ -116,7 +116,7 @@ export default function Home() {
           <div className='hexagon7 hex'></div>
         </div>
       </div>
-      <button onClick={getData}>Send</button>
+      <button onClick={postData}>Send</button>
       <p>{data}</p>
       <div className='sec-2'>
         <div className='triangle'></div>
