@@ -23,7 +23,7 @@ export default function Home() {
 
   const postData = async () => {
     try {
-      const response = await fetch('https://demo1-liart.vercel.app/resend-registration-link', {
+      const response = await fetch('https://demo1-liart.vercel.app/registration-link', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
