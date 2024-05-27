@@ -23,7 +23,7 @@ export default function Home() {
 
   const postData = async () => {
     try {
-      const response = await fetch('https://demo1-ruddy.vercel.app/resend-registration-link', {
+      const response = await fetch('https://demo1-liart.vercel.app/resend-registration-link', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ export default function Home() {
 
   const getData = async () => {
     try {
-      const response = await fetch('https://demo1-ruddy.vercel.app/users', {
+      const response = await fetch('https://demo1-liart.vercel.app/users', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
